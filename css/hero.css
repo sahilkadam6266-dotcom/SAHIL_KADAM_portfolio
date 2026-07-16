@@ -1,0 +1,315 @@
+/*=========================================
+              HERO SECTION
+=========================================*/
+
+.hero{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+    padding: 130px 9% 80px;
+    background: linear-gradient(135deg,#f8fbff,#eef4ff,#ffffff);
+    position: relative;
+    overflow: hidden;
+}
+
+/*=========================================
+         BACKGROUND GLOW EFFECTS
+=========================================*/
+
+.hero::before{
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: rgba(37,99,235,.15);
+    border-radius: 50%;
+    filter: blur(80px);
+    top: -120px;
+    right: -100px;
+    z-index: 0;
+}
+
+.hero::after{
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: rgba(96,165,250,.18);
+    border-radius: 50%;
+    filter: blur(70px);
+    bottom: -100px;
+    left: -70px;
+    z-index: 0;
+}
+
+/*=========================================
+            HERO TEXT
+=========================================*/
+
+.hero-text{
+    flex: 1;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-text h1{
+
+    font-size: 58px;
+
+    line-height: 1.15;
+
+    color: #0f172a;
+
+    margin-bottom: 18px;
+
+}
+
+.hero-text h2{
+
+    font-size: 30px;
+
+    color: #2563eb;
+
+    margin-bottom: 25px;
+
+    font-weight: 600;
+
+}
+
+.hero-text p{
+
+    max-width: 620px;
+
+    font-size: 18px;
+
+    color: #64748b;
+
+    line-height: 1.9;
+
+    margin-bottom: 35px;
+
+}
+
+/*=========================================
+             BUTTONS
+=========================================*/
+
+.hero-text button{
+
+    margin-right: 18px;
+
+    margin-top: 10px;
+
+}
+
+.hero-text button:first-of-type{
+
+    background: linear-gradient(135deg,#2563eb,#60a5fa);
+
+    color: white;
+
+    box-shadow: 0 12px 30px rgba(37,99,235,.30);
+
+}
+
+.hero-text button:first-of-type:hover{
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 18px 40px rgba(37,99,235,.45);
+
+}
+
+.hero-text button:last-of-type{
+
+    background: white;
+
+    color: #2563eb;
+
+    border: 2px solid #2563eb;
+
+}
+
+.hero-text button:last-of-type:hover{
+
+    background:#2563eb;
+
+    color:white;
+
+    transform: translateY(-8px);
+
+}
+
+/*=========================================
+          HERO IMAGE
+=========================================*/
+
+.hero-image{
+
+    flex: 1;
+
+    display:flex;
+
+    justify-content:center;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.hero-image img{
+
+    width:420px;
+
+    max-width:100%;
+
+    border-radius:30px;
+
+    box-shadow:0 30px 60px rgba(37,99,235,.25);
+
+    animation: floatImage 4s ease-in-out infinite;
+
+    transition:.4s;
+
+}
+
+.hero-image img:hover{
+
+    transform:scale(1.04);
+
+}
+
+/*=========================================
+          FLOAT ANIMATION
+=========================================*/
+
+@keyframes floatImage{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-20px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*=========================================
+         TEXT ANIMATION
+=========================================*/
+
+.hero-text h1{
+
+    animation:slideLeft 1s ease;
+
+}
+
+.hero-text h2{
+
+    animation:slideLeft 1.2s ease;
+
+}
+
+.hero-text p{
+
+    animation:slideLeft 1.4s ease;
+
+}
+
+.hero-text button{
+
+    animation:slideUp 1.6s ease;
+
+}
+
+/*=========================================
+           KEYFRAMES
+=========================================*/
+
+@keyframes slideLeft{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+@keyframes slideUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(50px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+/*style for buttons in hero section*/
+.hero-buttons{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+#typing{
+
+    color:#2563eb;
+
+    font-weight:700;
+
+}
+/*=======================JS================*/
+.typed-cursor{
+
+    color:#2563eb;
+
+    font-size:34px;
+
+    animation:blink .7s infinite;
+
+}
+
+@keyframes blink{
+
+    50%{
+
+        opacity:0;
+
+    }
+
+}

@@ -1,0 +1,235 @@
+/*==========================
+    GOOGLE FONT
+==========================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*==========================
+    CSS VARIABLES
+==========================*/
+
+:root{
+
+    --primary:#2563eb;
+    --primary-light:#60a5fa;
+
+    --dark:#0f172a;
+
+    --light:#f8fafc;
+
+    --white:#ffffff;
+
+    --gray:#64748b;
+
+    --shadow:0 15px 40px rgba(0,0,0,.08);
+
+    --transition:.35s ease;
+
+}
+
+/*==========================
+    RESET
+==========================*/
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    scroll-behavior:smooth;
+
+}
+
+/*==========================
+    BODY
+==========================*/
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:var(--light);
+
+    color:var(--dark);
+
+    overflow-x:hidden;
+
+}
+
+/*==========================
+    SELECTION
+==========================*/
+
+::selection{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+/*==========================
+    SCROLLBAR
+==========================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#e2e8f0;
+
+}
+
+/*==========================
+    COMMON SECTION
+==========================*/
+
+section{
+
+    padding:110px 9%;
+
+}
+
+/*==========================
+    COMMON HEADING
+==========================*/
+
+section h2{
+
+    font-size:46px;
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+    font-weight:700;
+
+}
+
+/*==========================
+    PARAGRAPH
+==========================*/
+
+p{
+
+    line-height:1.8;
+
+    color:var(--gray);
+
+}
+
+/*==========================
+    IMAGE
+==========================*/
+
+img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+/*==========================
+    BUTTON
+==========================*/
+
+button{
+
+    border:none;
+
+    outline:none;
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+button:hover{
+
+    transform:translateY(-6px);
+
+}
+
+/*==========================
+    LINKS
+==========================*/
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+/*==========================
+    LIST
+==========================*/
+
+ul{
+
+    list-style:none;
+
+}
+
+/*==========================
+    CONTAINER
+==========================*/
+
+.container{
+
+    max-width:1300px;
+
+    margin:auto;
+
+}
+/*=========================================
+        SMOOTH THEME CHANGE
+=========================================*/
+
+body,
+section,
+header,
+nav,
+button,
+input,
+textarea,
+footer,
+.skill-card,
+.service-card,
+.project-card,
+.why-box{
+
+    transition:
+    background .4s ease,
+    color .4s ease,
+    border-color .4s ease,
+    box-shadow .4s ease;
+
+}
+

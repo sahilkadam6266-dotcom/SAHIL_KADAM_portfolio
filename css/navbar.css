@@ -1,0 +1,171 @@
+/*=========================================
+            NAVBAR
+=========================================*/
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: 0.4s ease;
+}
+
+header.scrolled{
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 9%;
+    transition: 0.4s ease;
+}
+
+header.scrolled nav{
+    padding: 16px 9%;
+}
+
+/*=========================
+        LOGO
+=========================*/
+
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: #2563eb;
+    cursor: pointer;
+    transition: .35s ease;
+}
+
+.logo:hover{
+    transform: scale(1.05);
+    color: #1d4ed8;
+}
+
+/*=========================
+        MENU
+=========================*/
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+
+    position: relative;
+
+    color: #0f172a;
+
+    font-size: 17px;
+
+    font-weight: 500;
+
+    transition: .35s ease;
+
+}
+
+/*=========================
+        UNDERLINE
+=========================*/
+
+nav ul li a::after{
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -8px;
+
+    width: 0%;
+
+    height: 3px;
+
+    border-radius: 20px;
+
+    background: #2563eb;
+
+    transition: .35s ease;
+
+}
+
+nav ul li a:hover{
+
+    color:#2563eb;
+
+}
+
+nav ul li a:hover::after{
+
+    width:100%;
+
+}
+
+/*=========================
+    HIRE BUTTON
+=========================*/
+
+.nav-btn{
+
+    padding:12px 28px;
+
+    border-radius:50px;
+
+    background:#2563eb;
+
+    color:white;
+
+    transition:.35s ease;
+
+}
+
+.nav-btn:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-3px);
+
+}
+
+/*=========================
+    MOBILE ICON
+=========================*/
+
+.menu-btn{
+
+    display:none;
+
+    font-size:32px;
+
+    cursor:pointer;
+
+}
+
+/*=========================
+    ACTIVE LINK
+=========================*/
+
+nav ul li a.active{
+
+    color:#2563eb;
+
+}
+
+nav ul li a.active::after{
+
+    width:100%;
+
+}
+

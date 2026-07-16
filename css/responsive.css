@@ -1,0 +1,374 @@
+/*=========================================
+        LARGE TABLETS (1200px)
+=========================================*/
+
+@media (max-width:1200px){
+
+    section{
+        padding:90px 7%;
+    }
+
+    nav{
+        padding:20px 7%;
+    }
+
+    .hero{
+        gap:40px;
+    }
+
+    .hero-text h1{
+        font-size:48px;
+    }
+
+    .hero-image img{
+        width:360px;
+    }
+
+}
+
+/*=========================================
+            TABLETS (992px)
+=========================================*/
+
+@media (max-width:992px){
+
+    section{
+        padding:80px 6%;
+    }
+
+    nav{
+        padding:18px 6%;
+    }
+
+    /* Hero */
+
+    .hero{
+
+        flex-direction:column-reverse;
+
+        text-align:center;
+
+        gap:50px;
+
+    }
+
+    .hero-text p{
+
+        margin:auto;
+
+        margin-bottom:30px;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+    }
+
+    .hero-image img{
+
+        width:320px;
+
+    }
+
+    /* About */
+
+    .about{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .about-content h2{
+
+        text-align:center;
+
+    }
+
+    .about-stats{
+
+        justify-content:center;
+
+    }
+
+    .about-image::before{
+
+        display:none;
+
+    }
+
+}
+
+/*=========================================
+            MOBILE (768px)
+=========================================*/
+
+@media (max-width:768px){
+
+    /* Navbar */
+
+    nav{
+
+        flex-direction:column;
+
+        gap:20px;
+
+    }
+
+    nav ul{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:20px;
+
+    }
+
+    /* Headings */
+
+    section h2{
+
+        font-size:36px;
+
+    }
+
+    /* Hero */
+
+    .hero{
+
+        padding-top:150px;
+
+    }
+
+    .hero-text h1{
+
+        font-size:40px;
+
+    }
+
+    .hero-text h2{
+
+        font-size:24px;
+
+    }
+
+    .hero-text p{
+
+        font-size:16px;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .hero-buttons button{
+
+        width:220px;
+
+    }
+
+    .hero-image img{
+
+        width:280px;
+
+    }
+
+    /* Skills */
+
+    .skill-card{
+
+        width:100%;
+
+    }
+
+    /* Services */
+
+    .service-card{
+
+        width:100%;
+
+    }
+
+    /* Projects */
+
+    .project-card{
+
+        width:100%;
+
+    }
+
+    /* Why Me */
+
+    .why-box{
+
+        width:100%;
+
+    }
+
+    /* Contact */
+
+    .contact form{
+
+        padding:30px;
+
+    }
+
+    /* Footer */
+
+    .footer-container{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .social-icons{
+
+        justify-content:center;
+
+    }
+
+}
+
+/*=========================================
+        SMALL MOBILE (576px)
+=========================================*/
+
+@media (max-width:576px){
+
+    section{
+
+        padding:70px 5%;
+
+    }
+
+    nav h2{
+
+        font-size:28px;
+
+    }
+
+    nav ul{
+
+        gap:15px;
+
+    }
+
+    nav ul li a{
+
+        font-size:15px;
+
+    }
+
+    .hero-text h1{
+
+        font-size:34px;
+
+    }
+
+    .hero-text h2{
+
+        font-size:22px;
+
+    }
+
+    .hero-image img{
+
+        width:230px;
+
+    }
+
+    .about-image img{
+
+        width:260px;
+
+    }
+
+    .stat-box{
+
+        width:100%;
+
+    }
+
+    .skill-card,
+    .service-card,
+    .project-card{
+
+        padding:30px 20px;
+
+    }
+
+    .contact form{
+
+        padding:25px;
+
+    }
+
+    .contact input,
+    .contact textarea{
+
+        padding:15px;
+
+    }
+
+    .back-to-top{
+
+        width:48px;
+
+        height:48px;
+
+        right:20px;
+
+        bottom:20px;
+
+    }
+
+}
+
+/*=========================================
+        EXTRA SMALL (400px)
+=========================================*/
+
+@media (max-width:400px){
+
+    .hero-text h1{
+
+        font-size:30px;
+
+    }
+
+    .hero-text h2{
+
+        font-size:20px;
+
+    }
+
+    .hero-image img{
+
+        width:200px;
+
+    }
+
+    section h2{
+
+        font-size:30px;
+
+    }
+
+    .project-content h3{
+
+        font-size:20px;
+
+    }
+
+}
